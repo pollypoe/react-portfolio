@@ -1,0 +1,136 @@
+.contact-section {
+    margin-top: 80px;
+    color: var(--textColor);
+}
+
+.contact-section h3 {
+    font-size: 1.5rem;
+}
+.contact-section h2, .contact-section h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 2%;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 15rem;
+    color: var(--mainColor);
+    border: 2px solid;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    border-image: linear-gradient(45deg, #8C5332, #ba9784) 1;
+    background: linear-gradient(45deg, #8C5332, #ba9784);
+    box-shadow: 0 4px 15px 0 rgba(230, 230, 230, 0.75);
+}
+
+.contact-option h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.contact-option h5 {
+    font-size: 1.1rem;
+}
+
+.contact-option a {
+    color: var(--mainColor);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.email-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 5rem;
+}
+
+.email-link:hover {
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 30%;
+    color: var(--mainColor);
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #8C5332, #ba9784) 1;
+    background: linear-gradient(45deg, #8C5332, #ba9784);
+    box-shadow: 0 4px 15px 0 rgba(230, 230, 230, 0.75);
+}
+
+.submit-btn:hover {
+    border: solid 2px linear-gradient(45deg, #8C5332, #ba9784);
+    background: var(--mainColor);
+    color: var(--secondayColor);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-right: 42px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    resize: none;
+    color: var(--secondayColor);
+    box-shadow: 0 4px 15px 0 rgba(230, 230, 230, 0.75);
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #8C5332, #ba9784) 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-left: 3rem;
+    }
+    .contact-option {
+        width: 95%;
+        margin-left: 0.1rem;
+    }
+    .email-icon {
+        margin-top: 0rem;
+    }
+    .submit-btn {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        margin-left: 3rem;
+    }
+    .contact-option {
+        width: 90%;
+        margin-left: 0.1rem;
+    }
+    .submit-btn {
+        width: 55%;
+    }
+}
